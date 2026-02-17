@@ -43,6 +43,8 @@ jspm_packages/
 
 # bundle directory
 hahahahhahtml/
+*.html
+bundle.js
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
