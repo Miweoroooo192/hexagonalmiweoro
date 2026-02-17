@@ -1,0 +1,1 @@
+{"compilerOptions":{"strict":true,"target":"es5","lib":["ES5","DOM"],"outDir":"build","declaration":true,"declarationDir":"build","diagnostics":true,"downlevelIteration": true,"esModuleInterop":false,"allowSyntheticDefaultImports":false,"module":"esnext"}} 

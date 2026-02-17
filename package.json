@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^16.0.3",
+    "rollup": "^4.55.1",
+    "ts-loader": "^9.5.4",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "hexagonal.js": "^1.2.8"
+  }
+}
