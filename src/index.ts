@@ -9,7 +9,7 @@ hexagonal.defineComponent({
         // define anything here!
         sea: "blue",
         test: "This is a test item",
-        defaultState: 'This will be the new website'
+        defaultState: 'This is the new website'
     },
     render: function(name, state) {
         return [
