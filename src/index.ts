@@ -9,12 +9,17 @@ hexagonal.defineComponent({
         // define anything here!
         sea: "blue",
         test: "This is a test item",
-        defaultState: 'This is the new website'
+        defaultState: 'Hello! This is my webpage! (still in progress)'
     },
     render: function(name, state) {
         return [
             // my-component here!
             ['h1', {}, [ state.defaultState + '!' ], '/h1'],
+            ['br', {}, [], '/br'],
+            ['a', {href: 'https://github.com/Miweoroooo192'}, ["My Github page"], "/a"],
+            ['br', {}, [], '/br'],
+            ['a', {href: 'https://github.com/Miweoroooo192/ligaportugal'}, ["Portuguese League Simulation (only in portuguese)"], "/a"],
+            ['br', {}, [], '/br'],
             ['img', { src: 'https://miweoro.neocities.org/neocities.png' }, [], '/img']
             
             
@@ -41,6 +46,8 @@ hexagonal.defineComponent({
                     ["a", {color: "#eee", href: "#", onClick: function() { state.bgcol = "#eee"; state.textcolor = "#222"; }},["Light Mode " ]
                     , "/a"],
                     ["a", {color: "#eee", href: "#", onClick: function() { state.bgcol = "#222"; state.textcolor = "#eee"; }},["Dark Mode "]
+                    , "/a"],
+                    ["a", {color: "#eee", href: "#", onClick: function() { alert("soon") }},[["img", { height: "20px", src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1280px-Flag_of_Portugal.svg.png'}, [], "/img"], "Português "]
                     , "/a"]] // the last ] stays in the last <a>
                     , "/div"],
                     ["not-component", {  }, [], "/not-component"]]
