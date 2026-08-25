@@ -1,6 +1,7 @@
 # Miweoro's Website But Open-Source (MWBOS)
 NOTE: not all of pages will show up here
 Basically I used dell's npm package named hexagonal.js to rewrite the whole website and depend the WHOLE website on a open-source typescript file
+NOTE 2: i wont work on this project until dell fixes hexagonal
 ## Building
 First download the ZIP and extract it;
 
