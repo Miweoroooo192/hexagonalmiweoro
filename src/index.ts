@@ -30,22 +30,19 @@ hexagonal.defineComponent({
     name: 'thememeta',
     state: {
         // define anything here!
-        bgcol: "#222",
-        textcolor: "#eee",
+        mode: 'dark'
     },
     render: function(name, state) {
         return [
             // my-component here!
-            ["table", {bgColor: state.bgcol, color: state.textcolor, fontFamily: "Comic Sans MS", inline: false, width: "100%", height: "100vh"}, [
+            ["table", {bgColor: mode == 'dark' ? '#222' : '#eee', color: mode == 'dark' ? '#eee' : '#222', fontFamily: "Comic Sans MS", inline: false, width: "100%", height: "100vh"}, [
                 ["div", { width: "100%", height: "20px", inline: false, bgColor: "blue", color: "white"}, [
                     ["a", {color: "#eee", href: "https://miweoro.neocities.org"}, 
                         ["Miweoro ",
                             ['img', { src: 'https://miweoro.neocities.org/favicon.png' }, []
                             , '/img']]
                         , "/a"],
-                    ["a", {color: "#eee", href: "#", onClick: function() { state.bgcol = "#eee"; state.textcolor = "#222"; }},["Light Mode " ]
-                    , "/a"],
-                    ["a", {color: "#eee", href: "#", onClick: function() { state.bgcol = "#222"; state.textcolor = "#eee"; }},["Dark Mode "]
+                    ["a", {color: "#eee", href: "#", onClick: function() { mode = mode == 'dark' ? 'light' : 'dark'; }},['Switch to ' + (mode == 'dark' ? 'light' : 'dark') + " mode " ]
                     , "/a"],
                     ["a", {color: "#eee", href: "#", onClick: function() { alert("soon") }},[["img", { height: "20px", src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Flag_of_Portugal.svg/1280px-Flag_of_Portugal.svg.png'}, [], "/img"], "Português "]
                     , "/a"]] // the last ] stays in the last <a>
